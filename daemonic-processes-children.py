@@ -3,7 +3,6 @@ import multiprocessing.pool
  
 
 class NoDaemonProcess(multiprocessing.Process):
-    # make 'daemon' attribute always return False
     def _get_daemon(self):
         return False
     def _set_daemon(self, value):
